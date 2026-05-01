@@ -1,0 +1,2 @@
+# After Train() function completes
+torch.save(CNN_Emoji_model.fc1.state_dict(), 'final_weights.pth')
