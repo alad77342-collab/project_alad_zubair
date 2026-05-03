@@ -1,6 +1,6 @@
 # Emoji Image Classifier – DS3273 Final Project
 
-This repository contains my final project for DS3273 (Jan–2026).  
+This repository contains my final project for DS3273   
 It implements a CNN-based classifier for emoji images and follows the exact
 project structure required in the project_submission_format.pdf.
 
@@ -33,7 +33,7 @@ checkpoints/final_weights.pth
 Use the provided prediction function:
 
 from predict import the_predictor
-the_predictor(["data/img01.png"])
+the_predictor(["data/1.png"])
 
 This returns a list of predicted class indices.
 
