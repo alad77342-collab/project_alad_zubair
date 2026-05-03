@@ -1,23 +1,59 @@
-# Emoji Image Classifier – Final Project
+# Emoji Image Classifier – DS3273 Final Project
 
-This project implements a CNN-based classifier for emoji images, following the required structure from the project_submission_format.pdf.
+This repository contains my final project for DS3273 (Jan–2026).  
+It implements a CNN-based classifier for emoji images and follows the exact
+project structure required in the project_submission_format.pdf.
 
-## Project Structure
-- model.py — defines the CNN_Emoji model  
-- dataset.py — loads images from the data/ directory  
-- train.py — trains the model and saves checkpoints/final_weights.pth  
-- predict.py — contains the_predictor() for batch inference  
-- interface.py — exposes required names for grading  
-- config.py — stores hyperparameters  
+---
+
+## Installation
+
+1. Clone this repository:
+   git clone <your-public-repo-link>
+
+2. Install dependencies:
+   pip install torch torchvision
+
+No additional packages are required.
+
+---
 
 ## How to Train
+
 Run:
 python train.py
 
+This trains the CNN_Emoji model and saves the weights to:
+checkpoints/final_weights.pth
+
+---
+
 ## How to Predict
-from predict import the_predictor  
-the_predictor(["data/1.jpg"])
+
+Use the provided prediction function:
+
+from predict import the_predictor
+the_predictor(["data/img01.png"])
+
+This returns a list of predicted class indices.
+
+---
+
+## Project Structure
+
+- model.py — defines CNN_Emoji  
+- dataset.py — loads images from data/  
+- train.py — training loop  
+- predict.py — batch inference function  
+- interface.py — exposes required names for grading  
+- config.py — hyperparameters  
+- data/ — contains 10 raw images  
+- checkpoints/ — contains final_weights.pth  
+
+---
 
 ## Notes
-- All images in data/ are raw, unmodified.  
-- The project follows the exact directory and naming rules required for grading.
+
+- The repository is publicly accessible as required.
+- README includes installation and execution instructions.
+- All files follow the naming and structure rules from the PDF.
